@@ -1,1 +1,191 @@
-<h1>Hello World</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tony</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #ecf0f1;
+            --accent-color: #e74c3c;
+            --text-color: #333;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--secondary-color);
+            color: var(--text-color);
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 3rem 1rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            font-weight: 300;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin-top: 1rem;
+            opacity: 0.9;
+            font-style: italic;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .download-section {
+            text-align: center;
+            margin: 1rem 0 3rem 0;
+        }
+
+        .download-btn {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: white;
+            padding: 1rem 2rem;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .download-btn:hover {
+            background-color: #c0392b;
+            transform: translateY(-2px);
+        }
+        
+        .download-btn:active {
+            transform: translateY(0);
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .gallery-item {
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            background-color: white;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            aspect-ratio: 1 / 1;
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background-color: var(--primary-color);
+            color: white;
+            margin-top: 4rem;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            .container {
+                padding: 1rem;
+            }
+            .gallery {
+                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>In Loving Memory of Tony Cagliano</h1>
+        <p>A beautiful life remembered and cherished</p>
+    </header>
+
+    <div class="container">
+        <div class="download-section">
+            <a href="photos/tony.zip" class="download-btn" download>Download All Photos (.zip)</a>
+        </div>
+
+        <div class="gallery">
+            <div class="gallery-item"><img src="photos/20190510_225215.jpeg" alt="Tony Cagliano Photo" loading="lazy"></div>
+            <div class="gallery-item"><img src="photos/20190909_070648.jpg" alt="Tony Cagliano Photo" loading="lazy"></div>
+            <div class="gallery-item"><img src="photos/20200510_101739.jpg" alt="Tony Cagliano Photo" loading="lazy"></div>
+            <div class="gallery-item"><img src="photos/20200703_143641.jpg" alt="Tony Cagliano Photo" loading="lazy"></div>
+            <div class="gallery-item"><img src="photos/20200703_143958.jpg" alt="Tony Cagliano Photo" loading="lazy"></div>
+            <div class="gallery-item"><img src="photos/20200704_205113.jpg" alt="Tony Cagliano Photo" loading="lazy"></div>
+            <div class="gallery-item"><img src="photos/20200704_205811.jpg" alt="Tony Cagliano Photo" loading="lazy"></div>
+            <div class="gallery-item"><img src="photos/20200722_191913.jpg" alt="Tony Cagliano Photo" loading="lazy"></div>
+            <div class="gallery-item"><img src="photos/20201207_123407.jpg" alt="Tony Cagliano Photo" loading="lazy"></div>
+            <div class="gallery-item"><img src="photos/20201207_123539.jpg" alt="Tony Cagliano Photo" loading="lazy"></div>
+            <div class="gallery-item"><img src="photos/20201212_160856.jpg" alt="Tony Cagliano Photo" loading="lazy"></div>
+            <div class="gallery-item"><img src="photos/20210719_112417.jpg" alt="Tony Cagliano Photo" loading="lazy"></div>
+            <div class="gallery-item"><img src="photos/20210719_152954.jpg" alt="Tony Cagliano Photo" loading="lazy"></div>
+            <div class="gallery-item"><img src="photos/20210719_153109.jpg" alt="Tony Cagliano Photo" loading="lazy"></div>
+            <div class="gallery-item"><img src="photos/20210719_154039.jpg" alt="Tony Cagliano Photo" loading="lazy"></div>
+            <div class="gallery-item"><img src="photos/20210719_160201.jpg" alt="Tony Cagliano Photo" loading="lazy"></div>
+            <div class="gallery-item"><img src="photos/20211009_192744.jpg" alt="Tony Cagliano Photo" loading="lazy"></div>
+            <div class="gallery-item"><img src="photos/20211125_141347.jpg" alt="Tony Cagliano Photo" loading="lazy"></div>
+            <div class="gallery-item"><img src="photos/20211125_141349.jpg" alt="Tony Cagliano Photo" loading="lazy"></div>
+            <div class="gallery-item"><img src="photos/20220604_175650.jpg" alt="Tony Cagliano Photo" loading="lazy"></div>
+            <div class="gallery-item"><img src="photos/20230401_141616.jpg" alt="Tony Cagliano Photo" loading="lazy"></div>
+            <div class="gallery-item"><img src="photos/20230401_141926.jpg" alt="Tony Cagliano Photo" loading="lazy"></div>
+            <div class="gallery-item"><img src="photos/20240511_191509.jpg" alt="Tony Cagliano Photo" loading="lazy"></div>
+            <div class="gallery-item"><img src="photos/20240808_155915.jpg" alt="Tony Cagliano Photo" loading="lazy"></div>
+            <div class="gallery-item"><img src="photos/20240808_160630.jpg" alt="Tony Cagliano Photo" loading="lazy"></div>
+            <div class="gallery-item"><img src="photos/20240921_190107.jpg" alt="Tony Cagliano Photo" loading="lazy"></div>
+            <div class="gallery-item"><img src="photos/FB_IMG_1495998660499.jpg" alt="Tony Cagliano Photo" loading="lazy"></div>
+            <div class="gallery-item"><img src="photos/FullSizeR_2.jpg" alt="Tony Cagliano Photo" loading="lazy"></div>
+            <div class="gallery-item"><img src="photos/FullSizeR_3.jpg" alt="Tony Cagliano Photo" loading="lazy"></div>
+            <div class="gallery-item"><img src="photos/IMG_0461-1.jpg" alt="Tony Cagliano Photo" loading="lazy"></div>
+            <div class="gallery-item"><img src="photos/IMG_0517.jpg" alt="Tony Cagliano Photo" loading="lazy"></div>
+            <div class="gallery-item"><img src="photos/IMG_0575.jpg" alt="Tony Cagliano Photo" loading="lazy"></div>
+            <div class="gallery-item"><img src="photos/IMG_0576.jpg" alt="Tony Cagliano Photo" loading="lazy"></div>
+            <div class="gallery-item"><img src="photos/IMG_20170929_072855066.jpg" alt="Tony Cagliano Photo" loading="lazy"></div>
+            <div class="gallery-item"><img src="photos/IMG_2750.jpg" alt="Tony Cagliano Photo" loading="lazy"></div>
+            <div class="gallery-item"><img src="photos/IMG_5516.jpg" alt="Tony Cagliano Photo" loading="lazy"></div>
+            <div class="gallery-item"><img src="photos/IMG_7306-1.jpg" alt="Tony Cagliano Photo" loading="lazy"></div>
+            <div class="gallery-item"><img src="photos/OhioHalloween.jpg" alt="Tony Cagliano Photo" loading="lazy"></div>
+            <div class="gallery-item"><img src="photos/Ramsgame.jpg" alt="Tony Cagliano Photo" loading="lazy"></div>
+            <div class="gallery-item"><img src="photos/Screenshot_20240304-122026_Gallery.jpg" alt="Tony Cagliano Photo" loading="lazy"></div>
+            <div class="gallery-item"><img src="photos/Screenshot_20250504-121054_One UI Home.jpg" alt="Tony Cagliano Photo" loading="lazy"></div>
+            <div class="gallery-item"><img src="photos/Screenshot_20250721-215746_Gallery.jpg" alt="Tony Cagliano Photo" loading="lazy"></div>
+            <div class="gallery-item"><img src="photos/Tony%20and%20Leroy.jpg" alt="Tony and Leroy" loading="lazy"></div>
+            <div class="gallery-item"><img src="photos/Tonyhaircut.jpg" alt="Tony Cagliano Photo" loading="lazy"></div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 - Forever in our hearts</p>
+    </footer>
+
+</body>
+</html>
