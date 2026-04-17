@@ -100,6 +100,36 @@
             margin: 3rem 0;
         }
 
+        .qr-section {
+            text-align: center;
+            margin: 3rem auto 1rem auto;
+            max-width: 150px;
+        }
+
+        .qr-section a {
+            display: block;
+        }
+
+        .qr-section img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            display: block;
+        }
+
+        .qr-section img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+        }
+
+        .qr-section p {
+            font-size: 0.9rem;
+            color: #555;
+            margin-top: 1rem;
+        }
+
         .download-btn {
             display: inline-block;
             background-color: var(--accent-color);
@@ -427,6 +457,13 @@
 
         <div class="download-section" style="display: none;">
             <a href="photos/tony.zip" class="download-btn" download>Download All Photos (.zip)</a>
+        </div>
+
+        <div class="qr-section">
+            <a href="qr/index.html">
+                <img src="qr/TonyCagliano_QRCode.png" alt="Scan QR Code to share Memorial">
+            </a>
+            <p>Scan to view on mobile</p>
         </div>
     </div>
 
